@@ -1,0 +1,60 @@
+body{
+    background-image:url("https://lh3.googleusercontent.com/pw/AM-JKLXYG9ZrNb1V2pks-53hxDU53FKVuhN3PAdJDgTO-S76eIX-HPz6KOi33j9jOF9D_9MY9MnCGK1kUjQrP-YomCWCoO9YyJdfhoUO0lgLc-tXSv9KolrQ7MKbWgKhm0D0FuPyCtRbllfWfgJ1FV8J7JMQ=w750-h550-no");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+.container{
+    position: relative;
+}
+MySlides{
+    display: none;
+}
+.prev,.next{
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding:16px;
+    margin-top: 50px;
+    color:white;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+.caption{
+    text-align: center;
+    background-color: gray;
+    color:white;
+}
+.Numbertext{
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.row::after{
+    content:"" ;
+    display: flex;
+    clear: both;
+}
+.column{
+float: left;
+width: 16.66%;
+}
+.demo{
+    opacity: 0.6;
+}
+.active,.demo:hover{
+opacity: 1;
+}
+button{
+    background-color: lightblue;
+}

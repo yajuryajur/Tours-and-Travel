@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            uttarakhand
+        </title>
+<link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>DEV TOURS AND TRAVEL</h1>
+        <hr>
+        <h3>About Us</h3>
+        <p>Our mission is to be the leading and most trustworthy travel management company that sets the standars for professionalism,reliability and transparency to its customers.</p>
+        <div class="container">
+            <div class="MySlides">
+                <div class="Numbertext">
+                    1/6
+                </div>
+                <img src="https://static.toiimg.com/photo/msid-105173810,width-96,height-65.cms" width="100%" alt="Slide 1">
+            </div>
+             <div class="MySlides">
+                <div class="Numbertext">
+                    2/6
+                </div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/30/3a/3c/mesmerizing.jpg?w=1200&h=-1&s=1" width="100%" alt="Slide 2">
+            </div>
+            <div class="MySlides">
+                <div class="Numbertext">
+                    3/6
+                </div>
+                <img src="https://www.onlineuttarakhand.com/images/slide-12.jpg" width="100%" alt="Slide 3">
+            </div>
+                        <div class="MySlides">
+                <div class="Numbertext">
+                    4/6
+                </div>
+                <img src="https://i0.wp.com/theetlrblog.com/wp-content/uploads/2020/06/Kausani-Uttarakhand.jpg?fit=800%2C440&ssl=1" width="100%" alt="Slide 4">
+            </div>
+                                    <div class="MySlides">
+                <div class="Numbertext">
+                    5/6
+                </div>
+                <img src="https://travelogyindia.b-cdn.net/storage/app/upload/auli.jpg" width="100%" alt="Slide 5">
+            </div>
+                                                <div class="MySlides">
+                <div class="Numbertext">
+                    6/6
+                </div>
+                <img src="https://lh3.googleusercontent.com/pw/AM-JKLXYG9ZrNb1V2pks-53hxDU53FKVuhN3PAdJDgTO-S76eIX-HPz6KOi33j9jOF9D_9MY9MnCGK1kUjQrP-YomCWCoO9YyJdfhoUO0lgLc-tXSv9KolrQ7MKbWgKhm0D0FuPyCtRbllfWfgJ1FV8J7JMQ=w750-h550-no" width="100%" alt="Slide 6">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="Caption">
+            <p id="oiebsfouiws"></p>
+            </div>
+            <div class="row">
+<div class="column">
+    <img src="https://static.toiimg.com/photo/msid-105173810,width-96,height-65.cms" class="demo" width="100%" height="250px" onclick="currentSlide(1)" alt="place 1">
+</div>
+<div class="column">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/30/3a/3c/mesmerizing.jpg?w=1200&h=-1&s=1" class="demo" width="100%" height="250px" onclick="currentSlide(2)" alt="place 2">
+</div>
+<div class="column">
+    <img src="https://www.onlineuttarakhand.com/images/slide-12.jpg" class="demo" width="100%" height="250px" onclick="currentSlide(3)" alt="place 3">
+</div>
+<div class="column">
+    <img src="https://i0.wp.com/theetlrblog.com/wp-content/uploads/2020/06/Kausani-Uttarakhand.jpg?fit=800%2C440&ssl=1" class="demo" width="100%" height="250px" onclick="currentSlide(4)" alt="place 4">
+</div>
+<div class="column">
+    <img src="https://travelogyindia.b-cdn.net/storage/app/upload/auli.jpg" class="demo" width="100%" height="250px" onclick="currentSlide(5)" alt="place 5">
+</div>
+<div class="column">
+    <img src="https://lh3.googleusercontent.com/pw/AM-JKLXYG9ZrNb1V2pks-53hxDU53FKVuhN3PAdJDgTO-S76eIX-HPz6KOi33j9jOF9D_9MY9MnCGK1kUjQrP-YomCWCoO9YyJdfhoUO0lgLc-tXSv9KolrQ7MKbWgKhm0D0FuPyCtRbllfWfgJ1FV8J7JMQ=w750-h550-no" class="demo" width="100%" height="250px" onclick="currentSlide(6)" alt="place 6">
+</div>
+            </div>
+        </div>
+<script>
+    var slideIndex=1;
+    showSlides(slideIndex);
+    function plusSlides(n){
+     showSlides(slideIndex+=n);   
+    }
+    function currentSlide(n){
+        showSlides(slideIndex=n);
+    }
+    function showSlides(n){
+        var I;
+        var slide =document.getElementsByClassName("MySlides");
+        var gogo=document.getElementsByClassName("demo");
+        var text=document.getElementById("oiebsfouiws");
+        if(n>slide.length){
+            slideIndex=1;
+        }
+        if(n<1){
+            slideIndex=slide.length;
+        }
+        for(I=0;I<slide.length;I++){
+            slide[I].style.display="none";
+        }
+        for(I=0;I<gogo.length;I++){
+            gogo[I].className=gogo[I].className.replace("active","");        
+            }
+            slide[slideIndex-1].style.display="block";
+            gogo[slideIndex-1].className+="active";
+            text.innerHTML=gogo[slideIndex-1].alt;
+    }
+    </script>
+    <button>Next</button>
+    </body>
+    </html>
